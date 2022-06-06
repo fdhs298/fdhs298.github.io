@@ -1,0 +1,42 @@
+/* Author: 109403521 */
+/* In order to pass SIM TEST, this file will be added some comments */
+
+body {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+.type {
+    text-align: center;
+    font-weight:bold;
+}
+
+.content {
+    text-align: center;
+}
+
+li {
+    line-height: 2em;
+}

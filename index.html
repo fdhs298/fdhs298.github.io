@@ -1,0 +1,114 @@
+<!-- Author: 109403521 -->
+<!-- This template is reference from https://bootstrapmade.com/free-html-bootstrap-template-my-resume/-->
+
+<!-- Define HTML5-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Define character set as UTF-8 to prevent Chinese words display garbled -->
+  <meta charset="utf-8">
+  <meta name="keyword" content="NCU, HTML5, WP, FINAL, WEB">
+
+  <title>109403521's WP Website</title>
+
+  <!-- Favicons -->
+  <link href="favicon.ico" rel="icon">
+
+  <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+  <!-- css will set body text to 20px (1)-->
+
+  <!-- 1. h1 -->
+  <h1 align="center">Welcome to 109403521's CV</h1>
+
+  <!-- 2. hr -->
+  <hr>
+
+  <!-- 3. table -->
+  <table align="center" width="20%">
+  
+    <!-- 4. tr -->
+    <tr>
+      <!-- 5. th -->
+      <th>Type</th>
+      <th>Content</th>
+    </tr>
+    <tr>
+      <!-- 6. td -->
+      <td class="type">Student ID</td><!-- css "type" will render text into bold and align center (2)-->
+      <td class="content">109403521</td><!-- css "content" will align text center (3)-->
+    </tr>
+    <tr>
+      <td class="type">Department</td><!-- css "type" will render text into bold and align center-->
+      <td class="content">MIS</td><!-- css "content" will align text center -->
+    </tr>
+  </table>
+
+  <hr>
+
+  <table align="center">
+    <tr>
+      <td>
+
+        <!-- 7. ul -->
+        <ul>
+          <!-- 8. li -->
+          <li>
+            <!-- 9. strong -->
+            <strong>Website:</strong>
+            
+            <!-- 10. span -->
+            <span>
+              <!-- 11. a -->
+              <!-- css will set link color as blue by default  (4)-->
+              <!-- css will set link color as pink after visited (5)-->
+              <!-- css will set link color as orange on hover (6)-->
+              <!-- css will set link color as red at actived (7)-->
+              <a href="https://songchiu-web.mgt.ncu.edu.tw">https://songchiu-web.mgt.ncu.edu.tw</a>
+            </span>
+          </li>
+
+          <!-- css will set li line height to 2em (8)-->
+          <li><strong>Phone:</strong> <span>+886 3-422-7151#66061</span></li>
+          <li><strong>City:</strong> <span>Taoyuan, Taiwan</span></li>
+          <li><strong>Degree:</strong> <span>Undergraduate</span></li>
+          <li><strong>Email:</strong> <span id="email"></span><button onclick="showEmail()">Show Mail</button></li>
+        </ul>
+
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- 12. p -->
+  <p align="center">
+
+    <!-- 13. button -->
+    <button onclick="changeMode()">Have a try~</button>
+  </p>
+
+  <script>
+    function changeMode()
+    {
+      var element = document.body;
+      element.classList.toggle("dark");
+    }
+
+    function showEmail()
+    {
+      var mail = "songchiu \"at\" mgt.ncu.edu.tw ";
+      document.getElementById("email").innerHTML = mail;
+    }
+  </script>
+  <noscript>
+    <p>Your browser does not support js, please check your setting</p>
+  </noscript>
+</body>
+
+</html>
